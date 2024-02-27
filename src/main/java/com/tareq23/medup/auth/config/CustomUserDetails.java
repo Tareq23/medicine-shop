@@ -1,4 +1,4 @@
-package com.tareq23.SpringAuthPratice.config;
+package com.tareq23.medup.auth.config;
 
 import java.util.Arrays;
 import java.util.Collection;
@@ -9,7 +9,7 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import com.tareq23.SpringAuthPratice.entity.UserCredential;
+import com.tareq23.medup.auth.entity.UserCredential;
 
 
 

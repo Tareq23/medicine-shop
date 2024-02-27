@@ -1,4 +1,4 @@
-package com.tareq23.SpringAuthPratice.entity;
+package com.tareq23.medup.auth.entity;
 
 
 import jakarta.persistence.Entity;

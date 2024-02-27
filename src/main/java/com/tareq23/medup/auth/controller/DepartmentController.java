@@ -1,4 +1,4 @@
-package com.tareq23.SpringAuthPratice.controller;
+package com.tareq23.medup.auth.controller;
 
 import java.util.List;
 

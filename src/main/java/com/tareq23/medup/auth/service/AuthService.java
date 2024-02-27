@@ -1,4 +1,4 @@
-package com.tareq23.SpringAuthPratice.service;
+package com.tareq23.medup.auth.service;
 
 import org.aspectj.internal.lang.annotation.ajcDeclareAnnotation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,11 +11,11 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.util.ObjectUtils;
 
-import com.tareq23.SpringAuthPratice.config.CustomUserDetailService;
-import com.tareq23.SpringAuthPratice.dto.AuthRequest;
-import com.tareq23.SpringAuthPratice.dto.AuthSuccess;
-import com.tareq23.SpringAuthPratice.entity.UserCredential;
-import com.tareq23.SpringAuthPratice.repository.UserRepository;
+import com.tareq23.medup.auth.config.CustomUserDetailService;
+import com.tareq23.medup.auth.dto.AuthRequest;
+import com.tareq23.medup.auth.dto.AuthSuccess;
+import com.tareq23.medup.auth.entity.UserCredential;
+import com.tareq23.medup.auth.repository.UserRepository;
 
 @Service
 public class AuthService {

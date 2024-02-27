@@ -1,4 +1,4 @@
-package com.tareq23.SpringAuthPratice.controller;
+package com.tareq23.medup.auth.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.config.authentication.UserServiceBeanDefinitionParser;
@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.tareq23.SpringAuthPratice.dto.AuthRequest;
-import com.tareq23.SpringAuthPratice.entity.UserCredential;
-import com.tareq23.SpringAuthPratice.service.AuthService;
-import com.tareq23.SpringAuthPratice.service.JwtService;
+import com.tareq23.medup.auth.dto.AuthRequest;
+import com.tareq23.medup.auth.entity.UserCredential;
+import com.tareq23.medup.auth.service.AuthService;
+import com.tareq23.medup.auth.service.JwtService;
 
 @RestController
 @RequestMapping("/auth")

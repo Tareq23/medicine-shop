@@ -1,4 +1,4 @@
-package com.tareq23.SpringAuthPratice.dto;
+package com.tareq23.medup.auth.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;

@@ -1,4 +1,4 @@
-package com.tareq23.SpringAuthPratice.filter;
+package com.tareq23.medup.auth.filter;
 
 import java.io.IOException;
 
@@ -10,8 +10,8 @@ import org.springframework.security.web.authentication.WebAuthenticationDetailsS
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
-import com.tareq23.SpringAuthPratice.config.CustomUserDetailService;
-import com.tareq23.SpringAuthPratice.service.JwtService;
+import com.tareq23.medup.auth.config.CustomUserDetailService;
+import com.tareq23.medup.auth.service.JwtService;
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;

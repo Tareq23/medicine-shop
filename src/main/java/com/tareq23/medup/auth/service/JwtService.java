@@ -1,4 +1,4 @@
-package com.tareq23.SpringAuthPratice.service;
+package com.tareq23.medup.auth.service;
 
 import java.security.Key;
 import java.util.Date;

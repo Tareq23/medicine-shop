@@ -1,4 +1,4 @@
-package com.tareq23.SpringAuthPratice.config;
+package com.tareq23.medup.auth.config;
 
 import java.nio.file.attribute.UserPrincipalNotFoundException;
 import java.util.Optional;
@@ -9,8 +9,8 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Component;
 
-import com.tareq23.SpringAuthPratice.entity.UserCredential;
-import com.tareq23.SpringAuthPratice.repository.UserRepository;
+import com.tareq23.medup.auth.entity.UserCredential;
+import com.tareq23.medup.auth.repository.UserRepository;
 
 
 @Component

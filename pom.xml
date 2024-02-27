@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.tareq23</groupId>
-	<artifactId>spring-auth-pratice</artifactId>
+	<artifactId>medicine-shop</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>spring-auth-pratice</name>
 	<description>Demo project for Spring Boot</description>

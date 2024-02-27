@@ -1,10 +1,10 @@
-package com.tareq23.SpringAuthPratice.repository;
+package com.tareq23.medup.auth.repository;
 
 import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.tareq23.SpringAuthPratice.entity.UserCredential;
+import com.tareq23.medup.auth.entity.UserCredential;
 
 public interface UserRepository extends JpaRepository<UserCredential, Long>{
 
