@@ -38,9 +38,9 @@ public class AuthService {
 	public Object addUser(UserCredential userCredential)
 	{
 		
-		if(userCredential.getPassword().length() < 8) {
-			return ResponseEntity.badRequest().body("Password must be greater than 8 character");	
-		}
+//		if(userCredential.getPassword().length() < 8) {
+//			return ResponseEntity.badRequest().body("Password must be greater than 8 character");	
+//		}
 	
 		Object obj = repository.findByEmail(userCredential.getEmail());
 		
@@ -50,7 +50,7 @@ public class AuthService {
 					                    .body(userCredential.getEmail()+" email already exists ");
 		}
 		
-		userCredential.setPassword(encoder.encode(userCredential.getPassword()));
+//		userCredential.setPassword(encoder.encode(userCredential.getPassword()));
 		repository.save(userCredential);
 		return ResponseEntity.ok().body("You are successfully registered");
 	}

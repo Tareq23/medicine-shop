@@ -24,9 +24,6 @@ public class CustomUserDetails  implements UserDetails{
 	public CustomUserDetails(UserCredential userCredential)
 	{
 		this.username = userCredential.getEmail();
-		this.password = userCredential.getPassword();
-		
-		authorities = Arrays.stream(userCredential.getRoles().split(",")).map(SimpleGrantedAuthority::new).collect(Collectors.toList());
 	}
 	
 

@@ -9,8 +9,8 @@ spring:
     exclude: org.springframework.boot.autoconfigure.security.SecurityAutoConfiguration
   jpa:
     hibernate:
-      ddl-auto: create
+      ddl-auto: update
   datasource:
-    url: jdbc:mysql://localhost:3306/auth.practice?allowPublicKeyRetrieval=true&useSSL=false
+    url: jdbc:mysql://localhost:3306/medup?allowPublicKeyRetrieval=true&useSSL=false
     username: root
     password: 12x34y56z
