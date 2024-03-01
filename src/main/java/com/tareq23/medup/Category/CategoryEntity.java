@@ -1,41 +1,44 @@
-package com.tareq23.medup.role.entity;
+package com.tareq23.medup.Category;
 
+import java.util.List;
 import java.util.Set;
 
-import com.tareq23.medup.roleuser.entity.UserRoleEntity;
+import com.tareq23.medup.Product.ProductEntity;
+import com.tareq23.medup.generics.GenericsEntity;
 
-import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.Lob;
 import jakarta.persistence.OneToMany;
 import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Entity(name="roles")
-@Setter
+@Entity(name = "categories")
 @Getter
-@AllArgsConstructor
+@Setter
 @NoArgsConstructor
-public class RoleEntity {
+@AllArgsConstructor
+public class CategoryEntity {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
+	private long id;
 	
 	@NotBlank
-	@Size(min = 3)
-	@Column(columnDefinition = "varchar(50)")
 	private String name;
+	
+	@NotBlank
+	@Lob
 	private String description;
 	
+	@OneToMany(mappedBy = "category")
+	private List<ProductEntity> products;
 	
-	@OneToMany(mappedBy = "roles")
-	private Set<UserRoleEntity> userRoles;
-	
+	@OneToMany(mappedBy = "category")
+	private List<GenericsEntity> generics;
 }

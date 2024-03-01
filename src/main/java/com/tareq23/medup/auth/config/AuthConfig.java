@@ -35,29 +35,39 @@ public class AuthConfig {
 		
 		return new CustomUserDetailService();
 	}
-	
-	@Bean
-	public SecurityFilterChain filterChain(HttpSecurity http) throws Exception
+
+    @Bean
+    SecurityFilterChain filterChain(HttpSecurity http) throws Exception
 	{
 		
 		
-		return http.csrf()
-                .disable()
-                .authorizeHttpRequests()
-                .requestMatchers("/auth/**")
-                .permitAll()
-                .and()
-                .authorizeHttpRequests()
-                .requestMatchers("/users/all")
-                .hasAnyAuthority("ROLE_MANAGER")
-                .and()
-                .authorizeHttpRequests()
-                .requestMatchers("/departments/**")
-                .hasAnyAuthority("ROLE_TEACHER","ROLE_STUDENT")
-                .and()
-                .addFilterBefore(jwtAuthFilter,UsernamePasswordAuthenticationFilter.class)
-                .authenticationProvider(authenticationProvider())
-                .build();
+//		return http.csrf()
+//                .disable()
+//                .authorizeHttpRequests()
+//                .requestMatchers("/auth/**")
+//                .permitAll()
+//                .and()
+//                .authorizeHttpRequests()
+//                .requestMatchers("/users/all")
+//                .hasAnyAuthority("ROLE_MANAGER")
+//                .and()
+//                .authorizeHttpRequests()
+//                .requestMatchers("/departments/**")
+//                .hasAnyAuthority("ROLE_TEACHER","ROLE_STUDENT")
+//                .and()
+//                .addFilterBefore(jwtAuthFilter,UsernamePasswordAuthenticationFilter.class)
+//                .authenticationProvider(authenticationProvider())
+//                .build();
+    	
+    	http
+        .authorizeHttpRequests(authorizeRequests ->
+            authorizeRequests
+                .anyRequest().permitAll() // Permit access to all URLs
+        )
+        .csrf().disable(); // Disable CSRF protection for simplicity (not recommended in production)
+    
+    return http.build();
+    	
 	}
 	
 	@Bean

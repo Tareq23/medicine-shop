@@ -1,9 +1,9 @@
-package com.tareq23.medup.roleuser.entity;
+package com.tareq23.medup.roleuser;
 
 
 
 import com.tareq23.medup.auth.entity.UserCredential;
-import com.tareq23.medup.role.entity.RoleEntity;
+import com.tareq23.medup.role.RoleEntity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

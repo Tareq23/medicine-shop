@@ -1,9 +1,12 @@
 package com.tareq23.medup.auth.entity;
 
+import java.util.List;
 import java.util.Set;
 
-import com.tareq23.medup.roleuser.entity.UserRoleEntity;
-import com.tareq23.medup.userdetails.entity.UserDetailsEntity;
+import com.tareq23.medup.address.AddressEntity;
+import com.tareq23.medup.cart.CartEntity;
+import com.tareq23.medup.roleuser.UserRoleEntity;
+import com.tareq23.medup.userdetails.UserDetailsEntity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -41,5 +44,11 @@ public class UserCredential {
 	
 	@OneToMany(mappedBy = "users")
 	private Set<UserRoleEntity> userRoles;
+	
+	@OneToMany(mappedBy = "user")
+	private Set<AddressEntity> addresses;
+	
+	@OneToMany(mappedBy = "user")
+	private List<CartEntity> carts;
 
 }

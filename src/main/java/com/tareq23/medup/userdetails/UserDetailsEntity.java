@@ -1,4 +1,4 @@
-package com.tareq23.medup.userdetails.entity;
+package com.tareq23.medup.userdetails;
 
 import java.util.Date;
 
