@@ -18,7 +18,5 @@ public class ProductController {
 		return baseUrl;
 	}
 
-	public void welcome () {
 
-	}
 }
