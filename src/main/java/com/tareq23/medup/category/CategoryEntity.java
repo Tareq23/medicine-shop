@@ -1,10 +1,10 @@
-package com.tareq23.medup.Category;
+package com.tareq23.medup.category;
 
 import java.util.List;
 import java.util.Set;
 
-import com.tareq23.medup.Product.ProductEntity;
 import com.tareq23.medup.generics.GenericsEntity;
+import com.tareq23.medup.product.ProductEntity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

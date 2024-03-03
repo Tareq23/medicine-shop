@@ -1,9 +1,9 @@
 package com.tareq23.medup.cart;
 
-import com.tareq23.medup.Category.CategoryEntity;
-import com.tareq23.medup.Product.ProductEntity;
 import com.tareq23.medup.auth.entity.UserCredential;
+import com.tareq23.medup.category.CategoryEntity;
 import com.tareq23.medup.generics.GenericsEntity;
+import com.tareq23.medup.product.ProductEntity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

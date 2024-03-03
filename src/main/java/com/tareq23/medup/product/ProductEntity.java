@@ -1,10 +1,10 @@
-package com.tareq23.medup.Product;
+package com.tareq23.medup.product;
 
 import java.util.List;
 import java.util.Locale.Category;
 
-import com.tareq23.medup.Category.CategoryEntity;
 import com.tareq23.medup.cart.CartEntity;
+import com.tareq23.medup.category.CategoryEntity;
 import com.tareq23.medup.generics.GenericsEntity;
 
 import jakarta.persistence.Entity;

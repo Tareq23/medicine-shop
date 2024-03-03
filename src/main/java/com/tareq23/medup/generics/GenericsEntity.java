@@ -3,9 +3,9 @@ package com.tareq23.medup.generics;
 import java.util.List;
 import java.util.Set;
 
-import com.tareq23.medup.Category.CategoryEntity;
-import com.tareq23.medup.Product.ProductEntity;
 import com.tareq23.medup.address.AddressEntity;
+import com.tareq23.medup.category.CategoryEntity;
+import com.tareq23.medup.product.ProductEntity;
 import com.tareq23.medup.roleuser.UserRoleEntity;
 import com.tareq23.medup.userdetails.UserDetailsEntity;
 
