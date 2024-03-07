@@ -36,12 +36,25 @@ public class GenericsEntity {
 	
 	@NotBlank
 	private String name;
-	
-	@NotBlank
-	private Integer size;
-	
-	@Lob
+	private String type;
+	private String pregnancyCat;
+	private String contraindications;
+	private String dosage;
+	private String modeOfAction;
+	private String indicationDetails;
+	private String interaction;
+	private String administration;
+	private String side_effects;
+	private String precautions;
 	private String description;
+	private String reconstitution;
+	private String duration_of_treatment;
+	private String pediatric_uses;
+	private String storage_conditions;
+	private String overdose_effects;
+	private String composition;
+	private String status;
+	
 	
 	
 	@OneToMany(mappedBy = "generic")
