@@ -5,7 +5,9 @@ import java.util.Locale.Category;
 
 import com.tareq23.medup.cart.CartEntity;
 import com.tareq23.medup.category.CategoryEntity;
+import com.tareq23.medup.dosage.DosageForm;
 import com.tareq23.medup.generics.GenericsEntity;
+import com.tareq23.medup.manufacturer.Manufacturer;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -30,11 +32,10 @@ public class ProductEntity {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
 	
-	private Integer unit;
+	private float unitPrice;
 	
-	private Float previousPrice;
+	private float stripPrice;
 	
-	private Float currentPrice;
 	
 	private String imgUrl;
 	
@@ -49,5 +50,13 @@ public class ProductEntity {
 	
 	@OneToMany(mappedBy = "product")
 	private List<CartEntity> carts;
+	
+	@ManyToOne
+	@JoinColumn(name="company_id", referencedColumnName = "id")
+	private Manufacturer company;
+	
+	@ManyToOne
+	@JoinColumn(name="dosage_id", referencedColumnName = "id")
+	private DosageForm dosage;
 
 }
