@@ -1,4 +1,4 @@
-package com.tareq23.medup.Product;
+package com.tareq23.medup.product;
 
 public interface ProductService {
 }

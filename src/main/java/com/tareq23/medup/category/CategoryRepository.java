@@ -1,4 +1,4 @@
-package com.tareq23.medup.Category;
+package com.tareq23.medup.category;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

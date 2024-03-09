@@ -1,4 +1,4 @@
-package com.tareq23.medup.Category;
+package com.tareq23.medup.category;
 
 public class CategoryService {
 }
