@@ -18,5 +18,10 @@ public class ProductController {
 		return baseUrl;
 	}
 
+	public void StartProject() {
+		System.out.println("Starting my project.");
+		//goodfghgh
+	}
+
 
 }
