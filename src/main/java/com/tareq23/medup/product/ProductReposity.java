@@ -1,4 +1,4 @@
-package com.tareq23.medup.product;
+package com.tareq23.medup.Product;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
