@@ -1,6 +1,6 @@
 
 server:
-  port: 8081
+  port: 8090
 
 api:
   base-path: /api/v1
@@ -14,4 +14,4 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/medup?allowPublicKeyRetrieval=true&useSSL=false
     username: root
-    password: alamincsme
+    password: 12x34y56z
